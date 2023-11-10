@@ -31,21 +31,6 @@ type UserClaim struct {
 	ExpiresAt time.Time
 }
 
-// SignIn implements auth.Service.
-// func (*service) SignIn(ctx context.Context, username string, password string) (string, error) {
-// 	panic("unimplemented")
-// }
-
-// // SignUp implements auth.Service.
-// func (*service) SignUp(ctx context.Context, username string, password string) (string, error) {
-// 	panic("unimplemented")
-// }
-
-// // SignIn implements auth.Service.
-// func (*service) SignIn(ctx context.Context, username string, password string) (string, error) {
-// 	panic("unimplemented")
-// }
-
 func NewService(repo usersvc.UserRepository) usersvc.Service {
 	return &service{
 		repo: repo,
