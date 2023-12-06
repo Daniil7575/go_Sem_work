@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "blog"
+version = "0.1.0"
+description = ""
+authors = ["Daniil7575 <spider2013vip@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.104.1"
+sqlalchemy = "^2.0.23"
+alembic = {extras = ["sqlachemy"], version = "^1.13.0"}
+uvicorn = "^0.24.0.post1"
+jinja2 = "^3.1.2"
+aiohttp = "^3.9.1"
+asyncpg = "^0.29.0"
+python-multipart = "^0.0.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
